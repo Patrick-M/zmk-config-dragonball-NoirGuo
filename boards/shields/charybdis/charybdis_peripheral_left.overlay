@@ -51,7 +51,12 @@
 &trackball_split { 
 	status = "disabled"; 
 };
-
+/ {
+    trackball_listener2 {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
+};
 //RGB bus
 
 &pinctrl {
