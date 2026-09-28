@@ -49,12 +49,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - RCTL
-  - SPC
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-tab$$', h: Nav}
   - {t: '$$mdi:keyboard-esc$$', h: Fun}
   - {t: '$$mdi:backspace$$', h: Sym}
   - {t: '$$mdi:keyboard-return$$', h: Nav}
-  - {t: '$$mdi:backspace$$', h: Mouse}
+  - {t: SPC, h: Mouse}
   - {t: '$$mdi:apple-keyboard-caps$$', h: Ctl+Sft+F11}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Num}
   Nav:
@@ -391,12 +391,12 @@ layers:
   - C
   - V
   - B
-  - SPC
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Game, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - SPC
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - SPC
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
 combos:
