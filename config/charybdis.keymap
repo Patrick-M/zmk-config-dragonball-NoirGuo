@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;   // delete this line if build fails
             hold-trigger-key-positions =
@@ -100,7 +100,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             hold-trigger-key-positions =
@@ -127,6 +127,12 @@
             bindings = <&kp RET>;
             layers = <BASE>;
         };
+        combo_steamvr {
+            timeout-ms = <60>;
+            key-positions = <15 16>;      // NUM layer: F10 + F11
+            bindings = <&kp LC(LS(F11))>;
+            layers = <NUM>;
+        };
     };
 
     keymap {
@@ -152,8 +158,8 @@
             display-name = "Nav";
             bindings = <
 &trans &trans &trans &trans &trans &trans            &trans &kp HOME &kp PGUP &kp PGDN &kp END &trans
-&trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)   &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-&trans &trans &trans &trans &trans &trans            &trans &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &trans
+&trans &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &trans &kp LC(LEFT) &kp LC(DOWN) &kp LC(UP) &kp LC(RIGHT) &trans
+&trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
                &trans &trans &trans                  &trans &trans
                        &trans &trans                  &trans
@@ -168,7 +174,7 @@
             bindings = <
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
 &trans &kp LA(LEFT) &kp LA(RIGHT) &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-&trans &mkp MB4 &mkp MB2 &mkp MB1 &mkp MB3 &trans          &trans &trans &trans &trans &trans &trans
+&trans &mkp MB4 &mkp MB3 &mkp MB1 &mkp MB2 &trans          &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
                &trans &trans &trans                  &trans &trans
                        &trans &trans                  &trans
@@ -182,7 +188,7 @@
             bindings = <
 &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT    &trans &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
 &trans &kp SEMI &kp COLON &kp EQUAL &kp PLUS &kp BSLH   &trans &kp MINUS &kp UNDER &kp QMARK &kp SLASH &kp PIPE
-&trans &kp APOS &kp LT &kp LBRC &kp LBKT &kp LPAR      &kp RPAR &kp RBKT &kp RBRC &kp GT &kp DQT &trans
+&trans &kp APOS &kp LT &kp LBRC &kp LPAR &kp LBKT      &kp RBKT &kp RPAR &kp RBRC &kp GT &kp DQT &trans
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
                &trans &trans &trans                  &trans &trans
                        &trans &trans                  &trans
