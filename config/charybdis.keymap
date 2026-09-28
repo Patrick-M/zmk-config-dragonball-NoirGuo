@@ -187,8 +187,8 @@
 &kp TAB &kp Q &kp W &kp F &kp P &kp G               &kp J &kp L &kp U &kp Y &kp SEMI &kp BSPC
 &kp LCTRL &hm_l LGUI A &hm_l LALT R &hm_ls LSHFT S &hm_l LCTL T &kp D   &kp H &hm_r RCTL N &hm_rs RSHFT E &hm_r RALT I &hm_r RGUI O &kp APOS
 &kp LSFT &kp Z &kp X &kp C &kp V &kp B             &kp K &kp M &kp COMMA &kp DOT &kp SLASH &kp RCTL
-               &kp SPC &lt NAV TAB &lt FUN ESC     &lt SYM BSPC &lt NAV RET
-                       &lt MSE BSPC &ht_vr LC(LS(F11)) CAPS        &lt NUM DEL
+               &kp BSPC &lt NAV TAB &lt FUN ESC     &lt SYM BSPC &lt NAV RET
+                       &lt MSE SPC &ht_vr LC(LS(F11)) CAPS        &lt NUM DEL
             >;
             sensor-bindings = <&scroll_vertical_encoder &scroll_horizontal_encoder>;
         };
@@ -275,8 +275,8 @@
 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11          &kp TAB &kp Q &kp W &kp E &kp R &kp T
 &kp F12 &kp PSCRN &trans &trans &trans &trans        &kp LCTRL &kp A &kp S &kp D &kp F &kp G
 &trans &trans &trans &trans &trans &trans           &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B
-               &kp SPC &tog GAME &trans              &kp SPC &kp LCTRL
-                       &trans &trans                 &kp LSHIFT
+               &trans &tog GAME &trans              &kp SPC &kp LCTRL
+                       &kp SPC &trans                 &kp LSHIFT
             >;
             sensor-bindings = <&scroll_vertical_encoder &scroll_horizontal_encoder>;
         };
