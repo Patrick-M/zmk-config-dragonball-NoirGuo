@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: Sym}
   - {t: '$$mdi:keyboard-return$$', h: Nav}
   - {t: '$$mdi:backspace$$', h: Mouse}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:apple-keyboard-caps$$', h: Ctl+Sft+F11}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Num}
   Nav:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -188,10 +188,10 @@ layers:
   - {t: ;, s: ':'}
   - ':'
   - {t: '=', s: +}
-  - +
+  - {t: '-', s: _}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
+  - +
   - _
   - '?'
   - {t: /, s: '?'}
@@ -209,10 +209,10 @@ layers:
   - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+S
+  - AltGr+Q
+  - AltGr+P
+  - AltGr+Y
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
