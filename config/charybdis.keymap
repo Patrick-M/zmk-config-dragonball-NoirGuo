@@ -176,6 +176,22 @@
         };
     };
 
+    macros {
+        macro_pshell: macro_pshell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings =
+                <&macro_press &kp LSHFT>,
+                <&macro_press &kp LCTL>,
+                <&macro_press &mkp MB1>,
+                <&macro_release &mkp MB1>,
+                <&macro_release &kp LCTL>,
+                <&macro_release &kp LSHFT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -214,7 +230,7 @@
             display-name = "Mouse";
             bindings = <
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
-&trans &kp LA(LEFT) &kp LA(RIGHT) &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+&trans &kp LA(LEFT) &kp LA(RIGHT) &macro_pshell &trans &trans   &trans &trans &trans &trans &trans &trans
 &trans &mkp MB4 &mkp MB3 &mkp MB1 &mkp MB2 &trans          &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans            &trans &trans &trans &trans &trans &trans
                &trans &trans &trans                  &trans &trans
