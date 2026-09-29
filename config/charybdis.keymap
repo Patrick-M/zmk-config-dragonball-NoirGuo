@@ -289,7 +289,7 @@
             bindings = <
 &kp ESC &kp F1 &kp F2 &kp F3 &kp F4 &kp F5           &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11          &kp TAB &kp Q &kp W &kp E &kp R &kp T
-&kp F12 &kp PSCRN &trans &trans &trans &trans        &kp LCTRL &kp A &kp S &kp D &kp F &kp G
+&kp F12 &kp PSCRN &mkp MB3 &mkp MB1 &mkp MB2 &trans        &kp LCTRL &kp A &kp S &kp D &kp F &kp G
 &trans &trans &trans &trans &trans &trans           &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B
                &trans &tog GAME &trans              &kp SPC &kp LCTRL
                        &kp SPC &trans                 &kp LSHIFT
