@@ -185,8 +185,8 @@
             bindings =
                 <&macro_press &kp LSHFT>,
                 <&macro_press &kp LCTL>,
-                <&macro_press &mkp MB1>,
-                <&macro_release &mkp MB1>,
+                <&macro_press &mkp MB2>,
+                <&macro_release &mkp MB2>,
                 <&macro_release &kp LCTL>,
                 <&macro_release &kp LSHFT>;
         };
