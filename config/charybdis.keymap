@@ -10,7 +10,7 @@
 // NAV is layer 1 (scroll-while-navigating is nice); MSE is layer 2 -> drag-safe.
 // ====================================================================
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 12
 
 #include <dt-bindings/zmk/mouse.h>
@@ -46,8 +46,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <400>;
+    acceleration-exponent = <2>;
     trigger-period-ms = <16>;
 };
 
@@ -125,7 +125,7 @@
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "balanced";
-                    tapping-term-ms = <150>;
+                    tapping-term-ms = <120>;
                     quick-tap-ms = <150>;
                     require-prior-idle-ms = <60>;   // delete this line if build fails
                     hold-trigger-key-positions =
@@ -141,7 +141,7 @@
                     compatible = "zmk,behavior-hold-tap";
                     #binding-cells = <2>;
                     flavor = "balanced";
-                    tapping-term-ms = <150>;
+                    tapping-term-ms = <120>;
                     quick-tap-ms = <150>;
                     require-prior-idle-ms = <60>;
                     hold-trigger-key-positions =
